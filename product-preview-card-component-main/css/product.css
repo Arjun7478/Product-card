@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 375px) {
+  .card .img {
+    max-height: 235px;
+    width: 100%;
+    flex-shrink: 0;
+    background-size: cover;
+    object-fit: cover;
+  }
+}
+
+.main-container {
+  display: flex;
+  justify-items: center;
+  background-color: hsl(0deg, 0%, 100%);
+}
+@media only screen and (max-width: 628px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.img {
+  width: 100%;
+  display: inherit;
+}
+
+.div-1 {
+  max-width: 300px;
+}
+
+.div-2 {
+  max-width: 300px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.div-2__parfume {
+  letter-spacing: 4px;
+  color: hsl(228deg, 12%, 48%);
+  font-family: Aboreto;
+  font-size: 14px;
+}
+@media only screen and (max-width: 375px) {
+  .div-2__parfume {
+    padding: 5px;
+  }
+}
+.div-2__p-name {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: hsl(212deg, 21%, 14%);
+}
+@media only screen and (max-width: 375px) {
+  .div-2__p-name {
+    padding: 5px;
+  }
+}
+.div-2__p1 {
+  font-family: sans-serif;
+  color: hsl(228deg, 12%, 48%);
+  font-weight: 400;
+  font-size: 14px;
+}
+@media only screen and (max-width: 375px) {
+  .div-2__p1 {
+    padding: 5px;
+  }
+}
+.div-2__rate {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 375px) {
+  .div-2__rate {
+    padding: 5px;
+  }
+}
+
+.ml-15px {
+  margin-left: 15px;
+  color: hsl(228deg, 12%, 48%);
+}
+
+.ml-10px {
+  margin-left: 5px;
+}
+
+.color-cyne {
+  color: hsl(158deg, 36%, 37%);
+}
+
+.btn {
+  border-radius: 15px;
+  border: none;
+  font-family: Montserra;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(158deg, 36%, 37%);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: hsl(158deg, 91%, 22%);
+}/*# sourceMappingURL=product.css.map */

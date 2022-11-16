@@ -1,0 +1,141 @@
+$Dark-cyan: hsl(158, 36%, 37%);
+$Dark-cyan-dark: hsl(158, 91%, 22%);
+
+$Cream: hsl(30, 38%, 92%);
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+
+// font-family: 'Aboreto', cursive;
+// font-family: 'Montserrat', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $Cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //margin-top: 2rem;
+    min-height: 100vh;
+}
+.card {
+    max-width: 600px;
+
+    //max-height: 445px;
+    //margin-inline: auto; // ***** margin-right:auto; margin-left:auto;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @media only screen and(max-width:375px) {
+        .img {
+            max-height: 235px;
+            width: 100%;
+            flex-shrink: 0;
+            background-size: cover;
+            object-fit: cover;
+        }
+    }
+}
+
+.main-container {
+    display: flex;
+    justify-items: center;
+    background-color: $White;
+
+    @media only screen and(max-width:628px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.img {
+    width: 100%;
+    // background-size: cover;
+    display: inherit;
+}
+
+.div-1 {
+    max-width: 300px;
+}
+
+.div-2 {
+    max-width: 300px;
+
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__parfume {
+        letter-spacing: 4px;
+        color: $Dark-grayish-blue;
+
+        font-family: Aboreto;
+        font-size: 14px;
+
+        @media only screen and(max-width:375px) {
+            padding: 5px;
+        }
+    }
+    &__p-name {
+        font-family: "Fraunces", serif;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $Very-dark-blue;
+        @media only screen and(max-width:375px) {
+            padding: 5px;
+        }
+    }
+
+    &__p1 {
+        font-family: sans-serif;
+        color: $Dark-grayish-blue;
+        font-weight: 400;
+        font-size: 14px;
+
+        @media only screen and(max-width:375px) {
+            padding: 5px;
+        }
+    }
+    &__rate {
+        display: flex;
+        //justify-content: center;
+        align-items: center;
+
+        @media only screen and(max-width:375px) {
+            padding: 5px;
+        }
+    }
+}
+.ml-15px {
+    margin-left: 15px;
+    color: $Dark-grayish-blue;
+}
+.ml-10px {
+    margin-left: 5px;
+}
+
+.color-cyne {
+    color: $Dark-cyan;
+}
+.btn {
+    border-radius: 15px;
+    border: none;
+    font-family: Montserra;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    padding: 10px;
+    color: $White;
+    background-color: $Dark-cyan;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $Dark-cyan-dark;
+    }
+}
